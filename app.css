@@ -1,0 +1,217 @@
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url('font/Poppins/Poppins-Regular.ttf');
+}
+* {
+	font-family: "Poppins-Regular";
+	padding: 0;
+	margin: 0;
+}
+.border-red {
+	border: 1px solid red;
+}
+.border-blue {
+	border: 1px solid blue;
+}
+.button {
+	display: block;
+	border-radius: 0;
+	padding: 0.5rem 0.8rem;
+	border-radius: 20px;
+	transition: 0.5s;
+	text-align: center;
+}
+.button-white {
+	background-color: #fff;
+	color: #000;
+}
+.button-dark {
+	background-color: #000;
+	color: #fff;
+}
+.button:hover {
+	color: #8f00ff;
+	box-shadow: 1px 1px 8px white;
+}
+a {
+	text-decoration: none;
+}
+body {
+	background-color: #f0f0f0;
+}
+.navigation {
+	background-color: #8f00ff;
+	transition: 0.5s;
+}
+.navigation a {
+	color: #fff;
+}
+
+/* ===== Header =====*/
+.header {
+	background-color: #8f00ff;
+	/*border: 2px solid orange;*/
+}
+.header p{
+	text-shadow: 3px 3px 6px rgba(255,255,255,0.55);
+}
+.header img {
+	width: 100%;
+	max-height: 370px;
+	object-fit: cover;
+	/*object-position: 100% 100%;*/
+	/*border: 2px solid orange;*/
+}
+
+svg {
+	/*border: 2px solid red;*/
+	position: relative;
+	top: -1px;
+	/*width: 98%;*/
+}
+/* ===== Course =====*/
+.course .col-md-12 {
+	/*border: 2px solid red;*/
+}
+.course .card {
+	transition: 0.5s;
+	overflow: hidden;
+	border-radius: 20px;
+	margin-bottom: 10px;
+}
+.course .card-body {
+	background-color: #8f00ff;
+	color: #fff;
+	border-radius: 20px;
+	transition: 0.5s;
+	overflow: hidden;
+}
+.course img {
+	width: 100%;
+	height: 200px;
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	object-fit: cover;
+	transition: 0.5s;
+	/*border: 2px solid red;*/
+}
+.course .price {
+	background-color: #fff;
+	padding: 6px 10px;
+	border-radius: 20px;
+	color: #000;
+	font-size: 0.7rem;
+	top: -13px;
+	right: 20px;
+	transition: 0.5s;
+}
+.course .card:hover {
+	box-shadow: 1px 1px 8px #8f00ff;
+}
+.course .card:hover img{
+	transform: scale(1.03);
+}
+.course .card:hover .card-body{
+	background-color: #36454f;
+	/*color: #000;*/
+}
+.course .card:hover .price {
+	background-color: #8f00ff;
+	color: #fff;
+}
+
+/* ===== Social Icons ===== */
+.social-media {
+	position: fixed;
+	top: 40%;
+	z-index: 1000;
+}
+.social-media .btn {
+	border-radius: 0px;
+}
+.social-media .btn:first-child {
+	border-top-right-radius: 4px;
+}
+.social-media .btn:last-child {
+	border-bottom-right-radius: 4px;
+}
+
+/* ===== Course Detail ===== */
+.header.course-detail img {
+	width: 100%;
+	border-radius: 4px;
+	min-height: 250px;
+	object-fit: cover;
+	box-shadow: 1px 1px 10px white;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+	transition: 0.5s;
+	background-color: rgba(0,0,0,0.1);
+	color: #000;
+	border-radius: 20px;
+}
+.nav-tabs .nav-link.active{
+	background-color: #8f00ff;
+	color: #fff;
+	text-transform: uppercase;
+}
+/*Brief Overview*/
+/*What you will learn*/
+.card.whatyouwilllearn,
+.card.requirement,
+.card.howyouwilllearn,
+.card.review{
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.card.whatyouwilllearn:hover,
+.card.requirement:hover,
+.card.howyouwilllearn:hover,
+.card.review{
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+.card.whatyouwilllearn img,
+.card.requirement img,
+.card.howyouwilllearn img{
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+/*Review*/
+.card.review img{
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+.card.review .review-item {
+	border-bottom: 0.01rem solid rgba(143,0,255,0.2);
+}
+
+/*Course Content*/
+.accordion ul {
+	list-style-type: none;
+	padding: 0;
+}
+.accordion ul li {
+	padding: 8px 0;
+}
+.accordion ul li::before {
+	content: url(images/video.png);
+	padding: 0 5px;
+	position: relative;
+	top: 4px;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: #8f00ff;
+	color: #fff;
+}
+.accordion-button:not(.collapsed)::after {
+	background-color: #fff;
+	border-radius: 50%;
+}

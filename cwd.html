@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,scale=1.0">
+	<title>Complete Web Desing Course</title>
+	<link rel="stylesheet" type="text/css" href="course.css">
+</head>
+<body>
+
+	<main class="container">
+		<!-- <h3>Complete Web Design Course - Beginner to Advance</h3> -->
+		<p>01 Html - Html intro</p>
+		<div class="card">
+			<div class="content-video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/fWufPYcEcfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="content-list">
+				<ol type="1">
+					<li id="fWufPYcEcfU">
+						Html: Intro
+					</li>
+					<li id="CdSeb6Jy8qA">
+						Html: Intro officia deserunt mollit
+					</li>
+					<li id="C2xCxTaIejA">
+						Html: Intro officia deserunt mollit
+					</li>
+					<li id="gQ1nxqsTals">
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li><li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li><li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li>
+						Html: Intro officia deserunt mollit
+					</li>
+					<li id="fWufPYcEcfU">
+						Html: Intro officia deserunt mollit
+					</li>
+				</ol>
+			</div>
+		</div>
+		<p>Complete Web Design Course - Beginner to Advance</p>
+	</main>
+	<script>
+		let lis = document.querySelectorAll('li')
+		let iframe = document.querySelector('iframe')
+		
+		
+		for(let i = 0; i < lis.length; i++){
+			
+			lis[i].onclick = function(){
+				console.log(lis[i].getAttribute('id'))
+				iframe.setAttribute('src', `https://www.youtube.com/embed/${lis[i].getAttribute('id')}`)
+			}
+		}
+	</script>
+</body>
+</html>
